@@ -1,6 +1,5 @@
 import './index.scss';
-
-console.log('Webpack entry point');
+import './index.pug';
 
 $(document).ready(() => {
   console.log('jQuery Ready!');
