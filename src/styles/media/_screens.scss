@@ -1,0 +1,14 @@
+@media (min-width: 1200px) {
+  .layout-container {
+    grid-template-columns: 20% 1fr;
+  }
+  .video {
+    &-container {
+      justify-content: space-evenly;
+    }
+
+    &-thumbnail:first-child {
+      margin-left: 0.5rem;
+    }
+  }
+}

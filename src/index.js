@@ -1,6 +1,3 @@
-import './index.scss';
-import './index.pug';
-
-$(document).ready(() => {
-  console.log('jQuery Ready!');
-});
+import './styles/index.scss';
+import './components/index.pug';
+import './scripts/index.js';

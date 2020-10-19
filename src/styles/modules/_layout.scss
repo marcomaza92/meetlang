@@ -1,0 +1,18 @@
+.layout-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: 
+    "header header"
+    "chat viewer";
+  background: $chromatic-3;
+  padding: 1rem;
+
+  &.without-chat {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header header"
+      "viewer viewer";
+  }
+}

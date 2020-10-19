@@ -5,6 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: '/dist',
+    publicPath: './',
     filename: 'bundle.js'
   },
   module: {
@@ -16,10 +17,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
         loader: 'url-loader',
-        options: {
-          limit: 3000,
-          name: 'assets/images/[name].[ext]'
-        }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -34,7 +31,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.pug'
+      template: './src/components/index.pug'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
