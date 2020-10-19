@@ -4,7 +4,7 @@
 
 This template uses Pug, Sass and jQuery
 
-## Setup
+## Setup
 
 1- Install all the dependencies
 
