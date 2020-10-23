@@ -8,6 +8,7 @@
     "chat viewer";
   background: $chromatic-3;
   padding: 1rem;
+  overflow: hidden;
 
   &.without-chat {
     grid-template-columns: 1fr;

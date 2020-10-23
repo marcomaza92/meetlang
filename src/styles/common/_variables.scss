@@ -15,3 +15,5 @@ $secondary-color-dark-2: color.scale($secondary-color, $lightness: list.nth($var
 $secondary-color-dark-1: color.scale($secondary-color, $lightness: list.nth($variations, 2));
 $secondary-color-light-1: color.scale($secondary-color, $lightness: list.nth($variations, 3));
 $secondary-color-light-2: color.scale($secondary-color, $lightness: list.nth($variations, 4));
+
+$video-thumbnails-height: 80px;
