@@ -1,5 +1,5 @@
 $primary-color: #227BCD;
-$secondary-color: #CD227B;
+$secondary-color: #F2F2F2;
 $chromatic-1: #222222;
 $chromatic-2: #FEFEFE;
 $chromatic-3: #EAEAEA;
@@ -17,3 +17,4 @@ $secondary-color-light-1: color.scale($secondary-color, $lightness: list.nth($va
 $secondary-color-light-2: color.scale($secondary-color, $lightness: list.nth($variations, 4));
 
 $video-thumbnails-height: 80px;
+$icon-size: 30px;
