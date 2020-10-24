@@ -6,7 +6,37 @@
     min-height: 100px;
     overflow: scroll hidden;
     white-space: nowrap;
-  } 
+  }
+
+  &-toggle-thumbnails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0 unset unset 0;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: 0;
+    padding: 0;
+    margin: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: $primary-color;
+    box-shadow: $primary-color-light-2 1px 1px 5px;
+    cursor: pointer;
+    transition: background 0.125s ease-in-out;
+
+    & > img {
+      width: auto;
+      height: 50%;
+    }
+
+    &:hover {
+      background: $primary-color-dark-1;
+    }
+  }
 
   &-thumbnail {
     position: relative;
@@ -75,5 +105,5 @@
         background: $secondary-color-dark-2;
       }
     }
-  } 
+  }
 }

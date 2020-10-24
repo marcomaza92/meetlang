@@ -21,7 +21,8 @@
   &-videos,
   &-web,
   &-favorites,
-  &-back {
+  &-back,
+  .content-expand {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,5 +59,10 @@
     &:hover {
       background: $primary-color-dark-1;
     }
+  }
+
+  .content-expand {
+    background: $primary-color-dark-2;
+    box-shadow: $primary-color-dark-1 1px 1px 5px;
   }
 }

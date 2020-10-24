@@ -16,7 +16,55 @@
       "header header"
       "viewer viewer";
   }
+
   &.fifty-chat {
     grid-template-columns: 50% 1fr;
+  }
+
+  &.without-thumbnails {
+    grid-template-areas: 
+      "chat viewer"
+      "chat viewer";
+
+    .video-container {
+      display: none;
+    }
+
+    .chat,
+    .viewer {
+      height: calc(100vh - 2rem)
+    }
+
+    .viewer {
+      .content-container {
+        height: calc(100vh - #{$icon-size} - 0.5rem - 2rem);
+      }
+    }
+  }
+
+  &.over-thumbnails {
+    grid-template-areas: 
+      "header viewer"
+      "chat viewer";
+
+    .video-container {
+      justify-content: unset;
+    }
+      
+    .viewer {
+      .content-container {
+        height: calc(100vh - #{$icon-size} - 0.5rem - 2rem);
+      }
+    }
+  }
+
+  &.without-thumbnails.over-thumbnails {
+    grid-template-areas: 
+    "chat viewer"
+    "chat viewer";
+
+    .video-container {
+      display: none;
+    }
   }
 }

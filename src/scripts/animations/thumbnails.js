@@ -23,4 +23,9 @@ $(document).ready(() => {
       $(`.control-hide.${peopleThumbnails[i]}`).toggleClass('video-off');
     });
   };
+
+  $('.video-toggle-thumbnails').click(() => {
+    $('.layout-container').toggleClass('without-thumbnails');
+  });
+
 });

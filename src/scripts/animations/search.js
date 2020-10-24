@@ -48,4 +48,17 @@ $(document).ready(() => {
       $('.search-input').css('width', 'calc(100% - (4 * (30px + 0.5rem)))');
     });
   };
+
+  $('.content-expand').click(() => {
+    if ($('.layout-container').hasClass('over-thumbnails') && $('.layout-container').hasClass('without-thumbnails')) {
+      $('.layout-container').removeClass('over-thumbnails');
+      $('.layout-container').removeClass('without-thumbnails');
+    } else if ($('.layout-container').hasClass('without-thumbnails')) {
+      $('.layout-container').removeClass('without-thumbnails');
+    } else if ($('.layout-container').hasClass('over-thumbnails')) {
+      $('.layout-container').removeClass('over-thumbnails');
+    } else {
+      $('.layout-container').addClass('over-thumbnails');
+    }
+  });
 });
