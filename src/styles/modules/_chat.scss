@@ -10,7 +10,7 @@
     background: $chromatic-2;
     padding: 0 0.5rem;
     overflow: scroll;
-    box-shadow: $primary-color-light-1 1px 1px 10px;
+    box-shadow: $primary-color-light-1 1px 1px 5px;
   }
 
   &-message {
@@ -64,6 +64,7 @@
       padding-left: 0.5rem;
       border: 0;
       font-size: 0.875rem;
+      box-shadow: $primary-color-light-1 1px 1px 5px;
     }
 
     &-chat,

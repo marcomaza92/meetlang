@@ -18,6 +18,7 @@
     grid-gap: 0.5rem;
     margin-top: calc(#{$icon-size} + 0.5rem);
     overflow: scroll;
+    padding: 0.5rem;
   }
 
   &-item-view {
@@ -55,6 +56,7 @@
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: $secondary-color-dark-2 1px 1px 5px;
 
     & img {
       width: 100%;
@@ -77,7 +79,7 @@
     }
 
     &:hover {
-      box-shadow: $primary-color-light-1 1px 1px 10px;
+      box-shadow: $primary-color-light-1 1px 1px 5px;
 
       #{$parent}-item-overlay {
         position: absolute;
@@ -125,11 +127,11 @@
 
   &-container.list.web {
     #{$parent}-item {
+      box-shadow: $primary-color-dark-2 1px 1px 5px;
       background: $primary-color-light-2;
       transition: background 0.125s ease-in-out;
 
       &:hover {
-        box-shadow: transparent 0 0 0;
         background: $primary-color-light-1;
       }
     }
@@ -146,11 +148,11 @@
 
   &-container.list.favorites {
     #{$parent}-item {
+      box-shadow: $secondary-color-dark-2 1px 1px 5px;
       background: $secondary-color-light-2;
       transition: background 0.125s ease-in-out;
 
       &:hover {
-        box-shadow: transparent 0 0 0;
         background: $secondary-color-light-1;
       }
     }

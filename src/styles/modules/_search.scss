@@ -3,6 +3,7 @@
   display: flex;
   width: 100%;
   height: #{$icon-size};
+  padding: 0 0.5rem;
 
   &-input {
     outline: none;
@@ -13,6 +14,7 @@
     border: 0;
     background: $chromatic-2;
     padding-left: 0.5rem;
+    box-shadow: $primary-color-light-1 1px 1px 5px;
   }
 
   &-photos,
@@ -32,6 +34,7 @@
     cursor: pointer;
     background: $primary-color-light-1;
     transition: background 0.125s ease-in-out;
+    box-shadow: $primary-color-dark-1 1px 1px 5px;
 
     & img {
       width: auto;
