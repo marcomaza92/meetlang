@@ -80,6 +80,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: $primary-color-dark-1 1px 1px 5px;
       transition: background 0.125s ease-in-out;
 
       & img {
