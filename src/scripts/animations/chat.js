@@ -6,6 +6,10 @@ $(document).ready(() => {
     $('.layout-container').toggleClass('without-chat');
     $('.open-chat').toggleClass('hide');
   });
+
+  $('.chat-controls-expand').click(() => {
+    $('.layout-container').toggleClass('fifty-chat');
+  });
   
   $('.open-chat').click(() => {
     $('.chat').toggleClass('hide');

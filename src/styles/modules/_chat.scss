@@ -69,6 +69,7 @@
 
     &-chat,
     &-close,
+    &-expand,
     &-audio {
       border: 0;
       padding: 0;
@@ -93,7 +94,8 @@
       }
     }
 
-    &-close {
+    &-close,
+    &-expand {
       margin-right: 0.5rem;
     }
 

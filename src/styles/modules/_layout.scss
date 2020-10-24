@@ -16,4 +16,7 @@
       "header header"
       "viewer viewer";
   }
+  &.fifty-chat {
+    grid-template-columns: 50% 1fr;
+  }
 }
