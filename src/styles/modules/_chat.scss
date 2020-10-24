@@ -4,6 +4,10 @@
   position: relative;
   border-radius: 10px;
 
+  &-wrapper {
+    height: 100%;
+  } 
+
   &-messages {
     height: calc(100% - #{$icon-size} - 1rem);
     border-radius: 10px;

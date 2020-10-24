@@ -16,7 +16,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
     grid-gap: 0.5rem;
-    margin-top: calc(#{$icon-size} + 0.5rem);
+    margin-top: 0.5rem;
     overflow: scroll;
     padding: 0.5rem;
   }
@@ -24,11 +24,12 @@
   &-item-view {
     position: absolute;
     left: 0;
-    top: 0;
+    top: #{$icon-size};
     display: block;
     height: calc(100vh - #{$video-thumbnails-height} - 2rem - #{$icon-size} - 0.5rem - 2rem);
     width: 100%;
-    margin-top: calc(#{$icon-size} + 0.5rem);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
     border-radius: 10px;
 
     & img {

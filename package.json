@@ -17,6 +17,7 @@
   "author": "Marco Maza",
   "license": "MIT",
   "devDependencies": {
+    "animate-css-grid": "^1.4.3",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.1",
     "html-webpack-plugin": "^4.5.0",

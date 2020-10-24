@@ -1,3 +1,11 @@
+import { wrapGrid } from 'animate-css-grid'
+
+const layoutContainer = document.querySelector('.layout-container');
+wrapGrid(layoutContainer, {
+  duration: 500,
+  easing: 'easeInOut'
+});
+
 $(document).ready(() => {
   $('chat-messages').scrollTop($('chat-messages').scrollHeight);
 

@@ -1,19 +1,20 @@
 section(class="viewer")
-  div(class="search")
-    button(class="search-back hide")
-      img(src=require("../../assets/icon-back.svg").default, alt="", srcset="")
-    input(class="search-input" type="text" placeholder="Realiza tu búsqueda")
-    button(class="search-button search-photos selected")
-      img(src=require("../../assets/icon-images.svg").default, alt="", srcset="")
-    button(class="search-button search-videos")
-      img(src=require("../../assets/icon-videos.svg").default, alt="", srcset="")
-    button(class="search-button search-web")
-      img(src=require("../../assets/icon-web.svg").default, alt="", srcset="")
-    button(class="search-button search-favorites")
-      img(src=require("../../assets/icon-favorites.svg").default, alt="", srcset="")
-    button(class="search-button content-expand")
-      img(src=require("../../assets/icon-up-chevron.svg").default, alt="", srcset="")
-  include ../contentView/photos.pug
-  include ../contentView/videos.pug
-  include ../contentView/web.pug
-  include ../contentView/favorites.pug
+  div(class="viewer-wrapper")
+    div(class="search")
+      button(class="search-back hide")
+        img(src=require("../../assets/icon-back.svg").default, alt="", srcset="")
+      input(class="search-input" type="text" placeholder="Realiza tu búsqueda")
+      button(class="search-button search-photos selected")
+        img(src=require("../../assets/icon-images.svg").default, alt="", srcset="")
+      button(class="search-button search-videos")
+        img(src=require("../../assets/icon-videos.svg").default, alt="", srcset="")
+      button(class="search-button search-web")
+        img(src=require("../../assets/icon-web.svg").default, alt="", srcset="")
+      button(class="search-button search-favorites")
+        img(src=require("../../assets/icon-favorites.svg").default, alt="", srcset="")
+      button(class="search-button content-expand")
+        img(src=require("../../assets/icon-up-chevron.svg").default, alt="", srcset="")
+    include ../contentView/photos.pug
+    include ../contentView/videos.pug
+    include ../contentView/web.pug
+    include ../contentView/favorites.pug
