@@ -112,8 +112,8 @@
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  background: $secondary-color;
-  box-shadow: $secondary-color-dark-1 1px 1px 5px;
+  background: $secondary-color-dark-1;
+  box-shadow: $secondary-color-dark-2 1px 1px 5px;
   cursor: pointer;
   transition: background 0.125s ease-in-out;
 
@@ -123,6 +123,6 @@
   }
 
   &:hover {
-    background: $secondary-color-dark-1;
+    background: $secondary-color-dark-2;
   }
 }
