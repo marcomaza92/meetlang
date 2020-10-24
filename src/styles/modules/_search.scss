@@ -6,7 +6,7 @@
 
   &-input {
     outline: none;
-    font-size: 1rem;
+    font-size: 0.875rem;
     height: #{$icon-size};
     width: calc(100% - (4 * (#{$icon-size} + 0.5rem)));
     border-radius: 10px;

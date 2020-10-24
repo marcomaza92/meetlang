@@ -66,11 +66,11 @@
 
     &.audio-off,
     &.video-off {
-      background: $secondary-color;
+      background: $secondary-color-dark-1;
       transition: background 0.125s ease-in-out;
 
       &:hover {
-        background: $secondary-color-dark-1;
+        background: $secondary-color-dark-2;
       }
     }
   } 
