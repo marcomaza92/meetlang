@@ -10,15 +10,18 @@ $(document).ready(() => {
   $('chat-messages').scrollTop($('chat-messages').scrollHeight);
 
   $('.chat-controls-close').click(() => {
-    if ($('.layout-container').hasClass('over-thumbnails')) {
+    if ($('.layout-container').hasClass('over-thumbnails') && $('.layout-container').hasClass('without-thumbnails')) {
       $('.layout-container').removeClass('over-thumbnails');  
-      $('.content-expand').removeClass('rotate');
     }
     if ($('.layout-container').hasClass('fifty-chat')) {
       $('.layout-container').removeClass('fifty-chat');  
     }
     if ($('.layout-container').hasClass('without-thumbnails')) {
       $('.layout-container').addClass('without-thumbnails-and-chat');  
+    }
+    if ($('.layout-container').hasClass('over-thumbnails')) {
+      $('.layout-container').removeClass('over-thumbnails');  
+      $('.content-expand').removeClass('rotate'); 
     }
     $('.chat').toggleClass('hide');
     $('.layout-container').toggleClass('without-chat');

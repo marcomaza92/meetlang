@@ -1,23 +1,8 @@
+import data from '../constants/data.js';
+
+const contentTypes = data.contentTypes;
+
 $(document).ready(() => {
-  const contentTypes = [
-    {
-      searchButton: 'search-photos',
-      contentType: 'photos'
-    },
-    {
-      searchButton: 'search-videos',
-      contentType: 'videos'
-    },
-    {
-      searchButton: 'search-web',
-      contentType: 'web'
-    },
-    {
-      searchButton: 'search-favorites',
-      contentType: 'favorites'
-    }
-  ];
-  
   for (let i = 0; i < contentTypes.length; i++) {
     $(`.${contentTypes[i].searchButton}`).click(() => {
       $('.search-button').removeClass('selected');
