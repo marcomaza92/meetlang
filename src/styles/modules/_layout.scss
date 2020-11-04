@@ -67,4 +67,10 @@
       display: none;
     }
   }
+
+  &.without-thumbnails-and-chat {
+    grid-template-areas: 
+    "viewer viewer"
+    "viewer viewer";
+  }
 }
