@@ -1,4 +1,6 @@
 .search {
+  position: relative;
+  z-index: 20;
   display: flex;
   width: 100%;
   height: #{$icon-size};

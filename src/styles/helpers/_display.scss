@@ -5,3 +5,11 @@
 .rotate {
   transform: rotate(180deg);
 }
+
+.button-out {
+  margin: -0.5rem;
+
+  &:hover {
+    z-index: 30;
+  }
+}

@@ -29,7 +29,7 @@
     background: $primary-color;
     box-shadow: $primary-color-light-2 1px 1px 5px;
     cursor: pointer;
-    transition: background 0.125s ease-in-out;
+    transition: all 0.125s ease-in-out;
 
     & > img {
       width: auto;
@@ -38,6 +38,7 @@
 
     &:hover {
       background: $primary-color-dark-1;
+      margin: 0.5rem;
     }
   }
 
